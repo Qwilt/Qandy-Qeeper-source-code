@@ -1,0 +1,152 @@
+body {
+    background-image: url("pics/candy.jpg")	
+}
+
+
+#login{
+    text-align:     center;
+    margin:         0 auto;
+    position:       absolute;
+    top:            50%;
+    left:           50%;
+    transform:      translate(-50%,-50%);
+}
+
+#login input{
+    display:        block;
+    width:          250px;
+    height:         35px;
+    font-size:      13px;
+    font-family:    sans-serif;
+    padding-left:   10px;
+    margin-bottom:  12px;
+	border-radius:  10px;
+	border: 		1px;
+	background-position: 230px;
+	background-repeat: no-repeat;
+	
+}
+
+#username{
+	background-image: url("pics/user.png");
+}
+#password{
+	background-image: url("pics/lock.png");
+}
+
+#login .card::placeholder{
+	color: 			#7b7c7c;
+	font-weight:    Bold;
+}
+
+#login #open-btn{
+	font-weight:    Bold;
+    background:     #18bfb5;
+    color:          #eeeff1;
+    text-align:     center;
+    vertical-align: middle;
+	cursor:			pointer;
+}
+
+#login #reset-link{
+    text-align:     center;
+    display:        block;
+    color:          white;
+    font-size:      13px;
+
+}
+
+#spinner{
+	position:       fixed;
+	width:			30px;
+	height:			30px;
+	background:		transparent;
+	border-left:	5px solid grey;
+	border-right:	5px solid grey;
+	border-top:		5px solid lightgrey;
+	border-bottom:	5px solid lightgrey;
+	left:			0;
+	right:			0;
+	bottom:			0;
+	top:			0;
+	margin:			auto;
+    border-radius: 	50%;
+	animation:		loader 2s linear infinite;
+	display:		none;
+
+}
+@keyframes loader{
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+#tooltip{
+	background-color:   #b9baba;
+	padding:            20px;
+	border-radius:      10px;
+    display:            inline-block;
+    margin-left:        40px;
+    margin-right:       40px;
+}
+
+#logo{
+	padding-bottom:     20px;
+	display:            inline-block;
+}
+
+#welcome-logo{
+    display:            none;
+	position:       absolute;
+    top:            50%;
+    left:           50%;
+    transform:      translate(-50%,-50%);
+}
+
+.left-sign{
+	color:              #eeeff1;
+	margin-top:         0;
+	margin-left:        5px;
+	margin-bottom:      6px;
+    font-family:        sans-serif;
+	font-size:          15px;
+    text-align:         left;
+}
+
+#qandy{
+	font-weight:    Bold;
+	color:          black;
+}
+
+#welcome{
+	color:          black;
+}
+
+#tooltip:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #b9baba;
+    position: absolute;
+    right: 69%;
+    top:30%;
+}
+
+@media screen and (max-width:969px){
+    #tooltip:after{
+            border-right:   10px solid transparent;
+            border-bottom:  10px solid #b9baba;
+            right:          48%;
+            top:            41.5%;
+    }
+}
+
+
+
+
+
+
+
